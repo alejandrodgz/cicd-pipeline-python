@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 def index():
-    """Maneja la lógica de la calculadora y renderiza la plantilla principal."""
+    """Maneja la lógica de la calculadora y renderiza la plantilla."""
     resultado = None
     if request.method == "POST":
         try:
