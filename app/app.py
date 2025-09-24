@@ -16,6 +16,7 @@ app_port = int(os.environ.get("PORT", 5000))
 def index():
     """Maneja la lógica de la calculadora y renderiza la plantilla."""
     resultado = None
+    ### test error
     if request.method == "POST":
         try:
             num1 = float(request.form["num1"])
